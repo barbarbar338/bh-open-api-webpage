@@ -3,6 +3,7 @@ import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 
 import Landing from "./pages/Landing";
+import Features from "./pages/Features";
 import NotFound from "./pages/NotFound";
 
 export default class App extends Component {
@@ -25,6 +26,9 @@ export default class App extends Component {
                     <Switch>
                         <Route exact path="/">
                             <Landing />
+                        </Route>
+                        <Route path="/features">
+                            <Features />
                         </Route>
                         <Route path="*">
                             <NotFound />

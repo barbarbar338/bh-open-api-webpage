@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import CONFIG from "../../config";
 
@@ -56,13 +57,10 @@ export default class Example extends Component {
             <section className="pd-1-5">
                 <h2 className="text-center">Example</h2>
                 <p className="text-center lead">
-                    See docs:{" "}
-                    <a href="https://brawlhalla-docs.bariscodes.me/" rel="noreferrer" target="_blank">
-                        Click me!
-                    </a>
+                    See All Features: <Link to="/features">Click me!</Link>
                 </p>
-                <div className="row row-cols-2">
-                    <div className="col">
+                <div className="row">
+                    <div className="col-sm-6">
                         <h3>Request Input</h3>
                         <div className="input-group">
                             <div className="input-group-prepend">
@@ -85,7 +83,7 @@ export default class Example extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="col">
+                    <div className="col-sm-6">
                         <h3>Response</h3>
                         <textarea
                             rows="10"
