@@ -49,6 +49,14 @@ export default class Layout extends Component {
                                 <Link className="nav-link" to="/">
                                     Home
                                 </Link>
+                                <a 
+                                    className="nav-link" 
+                                    href="https://github.com/barbarbar338/bh-open-api-webpage" 
+                                    target="_blank" 
+                                    rel="noreferrer"
+                                >
+                                    GitHub
+                                </a>
                             </li>
                             <li className="nav-item dropdown">
                                 <div
