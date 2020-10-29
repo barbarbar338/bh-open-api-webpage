@@ -106,7 +106,7 @@ const FEATURES = [
     {
         title: "Get Clan Data",
         query: `utils/clan?${defaultClanID}`,
-        path: "/get-ranked-2v2-data",
+        path: "/get-clan-data",
     },
 ];
 

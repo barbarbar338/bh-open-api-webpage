@@ -7,9 +7,9 @@ import FEATURES from "../features";
 export default class Layout extends Component {
     handleFeatures() {
         const features = [];
-        FEATURES.forEach((featureData) => {
+        FEATURES.forEach((featureData, i) => {
             features.push(
-                <Link className="dropdown-item" to={featureData.path}>
+                <Link key={i} className="dropdown-item" to={featureData.path}>
                     {featureData.title}
                 </Link>,
             );

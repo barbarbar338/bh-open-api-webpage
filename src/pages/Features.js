@@ -12,8 +12,8 @@ export default class Landing extends Component {
         },
     };
     handleFeatures() {
-        return FEATURES.map((featureItemData) => {
-            return <FeatureItem {...featureItemData} />;
+        return FEATURES.map((featureItemData, i) => {
+            return <FeatureItem key={i} {...featureItemData} />;
         });
     }
     render() {
@@ -21,6 +21,7 @@ export default class Landing extends Component {
             <Layout meta={this.state.meta}>
                 <div className="container">
                     <Banner />
+                    <hr />
                     <section className="pd-1-5">
                         <div className="row">{this.handleFeatures()}</div>
                     </section>
