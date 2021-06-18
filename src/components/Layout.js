@@ -51,10 +51,10 @@ export default class Layout extends Component {
                                 </Link>
                             </li>
                             <li className="nav-item active">
-                                <a 
-                                    className="nav-link" 
-                                    href="https://github.com/barbarbar338/bh-open-api-webpage" 
-                                    target="_blank" 
+                                <a
+                                    className="nav-link"
+                                    href="https://github.com/barbarbar338/bh-open-api-webpage"
+                                    target="_blank"
                                     rel="noreferrer"
                                 >
                                     GitHub
