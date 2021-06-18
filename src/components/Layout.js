@@ -2,20 +2,7 @@ import DocumentMeta from "react-document-meta";
 import Banner from "../images/banner.png";
 import { Link } from "react-router-dom";
 import { Component } from "react";
-import FEATURES from "../features";
-
 export default class Layout extends Component {
-    handleFeatures() {
-        const features = [];
-        FEATURES.forEach((featureData, i) => {
-            features.push(
-                <Link key={i} className="dropdown-item" to={featureData.path}>
-                    {featureData.title}
-                </Link>,
-            );
-        });
-        return features;
-    }
     render() {
         return (
             <DocumentMeta {...this.props.meta}>
@@ -60,23 +47,10 @@ export default class Layout extends Component {
                                     GitHub
                                 </a>
                             </li>
-                            <li className="nav-item dropdown">
-                                <div
-                                    className="nav-link dropdown-toggle"
-                                    id="navbarDropdownMenuLink"
-                                    role="button"
-                                    data-toggle="dropdown"
-                                    aria-haspopup="true"
-                                    aria-expanded="false"
-                                >
+                            <li className="nav-item active">
+                                <Link className="nav-link" to="/features">
                                     Features
-                                </div>
-                                <div
-                                    className="dropdown-menu"
-                                    aria-labelledby="navbarDropdownMenuLink"
-                                >
-                                    {this.handleFeatures()}
-                                </div>
+                                </Link>
                             </li>
                         </ul>
                     </div>
