@@ -104,6 +104,11 @@ const FEATURES = [
         path: "/get-ranked-2v2-data",
     },
     {
+        title: "Get Ranked Seasonal Data",
+        query: `utils/rankedseasonal?${defaultRankedData}`,
+        path: "/get-ranked-seasonal-data",
+    },
+    {
         title: "Get Clan Data",
         query: `utils/clan?${defaultClanID}`,
         path: "/get-clan-data",
