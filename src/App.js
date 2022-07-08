@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import FEATURES from "./features";
 import Landing from "./pages/Landing";
@@ -11,9 +11,11 @@ export default class App extends Component {
     handleFeatureRedirects() {
         return FEATURES.map((featureData, i) => {
             return (
-                <Route key={i} path={featureData.path}>
-                    <Feature {...featureData} />
-                </Route>
+                <Route
+                    key={i}
+                    path={featureData.path}
+                    element={<Feature {...featureData} />}
+                />
             );
         });
     }
@@ -31,20 +33,14 @@ export default class App extends Component {
                     draggable
                     pauseOnHover
                 />
-                <Router>
-                    <Switch>
-                        <Route exact path="/">
-                            <Landing />
-                        </Route>
-                        <Route path="/features">
-                            <Features />
-                        </Route>
+                <BrowserRouter>
+                    <Routes>
+                        <Route path="/" element={<Landing />} />
+                        <Route path="/features" element={<Features />} />
                         {this.handleFeatureRedirects()}
-                        <Route path="*">
-                            <NotFound />
-                        </Route>
-                    </Switch>
-                </Router>
+                        <Route path="*" element={<NotFound />} />
+                    </Routes>
+                </BrowserRouter>
             </div>
         );
     }
