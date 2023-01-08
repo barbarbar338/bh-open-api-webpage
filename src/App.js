@@ -1,10 +1,10 @@
 import { Component } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import FEATURES from "./features";
-import Landing from "./pages/Landing";
-import Features from "./pages/Features";
 import Feature from "./pages/Feature";
+import Features from "./pages/Features";
+import Landing from "./pages/Landing";
 import NotFound from "./pages/NotFound";
 
 export default class App extends Component {

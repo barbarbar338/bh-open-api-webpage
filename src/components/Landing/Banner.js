@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import BannerImage from "../../images/banner.png";
 import CONFIG from "../../config";
+import BannerImage from "../../images/banner.png";
 
 export default function Banner() {
     return (

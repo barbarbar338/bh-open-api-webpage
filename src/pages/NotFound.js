@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
 import { Component } from "react";
+import { Link } from "react-router-dom";
 import Layout from "../components/Layout";
 
 export default class NotFound extends Component {

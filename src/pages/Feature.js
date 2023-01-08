@@ -1,7 +1,7 @@
 import { Component } from "react";
 import { toast } from "react-toastify";
-import Layout from "../components/Layout";
 import Banner from "../components/Feature/Banner";
+import Layout from "../components/Layout";
 import CONFIG from "../config";
 
 export default class Landing extends Component {

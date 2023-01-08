@@ -1,7 +1,7 @@
 import { Component } from "react";
-import Layout from "../components/Layout";
 import Banner from "../components/Features/Banner";
 import FeatureItem from "../components/Features/FeatureItem";
+import Layout from "../components/Layout";
 import FEATURES from "../features";
 
 export default class Landing extends Component {

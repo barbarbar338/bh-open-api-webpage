@@ -1,7 +1,6 @@
 const defaultBrawlhallaID = "brawlhalla_id=3145331";
 const defaultSteamID = "steam_id=76561198320003276";
-const defaultSteamURL = "steam_url=https://steamcommunity.com/id/just_jewelz/";
-const defaultName = "name=barbarbar338";
+const defaultSteamURL = "steam_url=https://steamcommunity.com/id/barisbored/";
 const defaultLegendID = "legend_id=3";
 const defaultLegendName = "legend_name=cassidy";
 const defaultRankedData = "region=eu&page=1";
@@ -24,11 +23,6 @@ const FEATURES = [
         path: "/get-glory-by-steam-url",
     },
     {
-        title: "Get Glory By Name",
-        query: `glory/name?${defaultName}`,
-        path: "/get-glory-by-name",
-    },
-    {
         title: "Get Ranked By ID",
         query: `ranked/id?${defaultBrawlhallaID}`,
         path: "/get-ranked-by-id",
@@ -44,11 +38,6 @@ const FEATURES = [
         path: "/get-ranked-by-steam-url",
     },
     {
-        title: "Get Ranked By Name",
-        query: `ranked/name?${defaultName}`,
-        path: "/get-ranked-by-name",
-    },
-    {
         title: "Get Stats By ID",
         query: `stats/id?${defaultBrawlhallaID}`,
         path: "/get-stats-by-id",
@@ -62,11 +51,6 @@ const FEATURES = [
         title: "Get Stats By Steam URL",
         query: `ranked/steamurl?${defaultSteamURL}`,
         path: "/get-stats-by-steam-url",
-    },
-    {
-        title: "Get Stats By Name",
-        query: `ranked/name?${defaultName}`,
-        path: "/get-stats-by-name",
     },
     {
         title: "Get All Legends",

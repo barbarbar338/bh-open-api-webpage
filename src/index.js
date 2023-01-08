@@ -1,11 +1,11 @@
-import React from "react";
-import ReactDOM from "react-dom";
 import $ from "jquery";
+import React from "react";
+import { createRoot } from "react-dom/client";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-toastify/dist/ReactToastify.css";
-import "./styles/index.css";
 import "./styles/404.css";
+import "./styles/index.css";
 
 import "bootstrap/dist/js/bootstrap.bundle";
 
@@ -13,9 +13,10 @@ import App from "./App";
 
 window.jQuery = window.$ = $;
 
-ReactDOM.render(
+const root = createRoot(document.getElementById("root"));
+
+root.render(
     <React.StrictMode>
         <App />
     </React.StrictMode>,
-    document.getElementById("root"),
 );

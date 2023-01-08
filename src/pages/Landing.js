@@ -1,7 +1,7 @@
 import { Component } from "react";
-import Layout from "../components/Layout";
 import Banner from "../components/Landing/Banner";
 import Example from "../components/Landing/Example";
+import Layout from "../components/Layout";
 
 export default class Landing extends Component {
     state = {
